@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import AffirmationDetail from './AffirmationDetail';
 import AffirmationForm from './AffirmationForm';
+import Filter from './Filter';
 
 function AffirmationList() {
     const [selectedCategory, setSelectedCategory] = useState("All");
@@ -44,6 +45,12 @@ function AffirmationList() {
 
   return (
     <div className="AffirmationList">
+        <Filter 
+            category={selectedCategory}
+            onCategoryChange={handleCategoryChange}/>   
+
+        <AffirmationForm onAddAffirmation={handleAddAffirmation}/>
+
         <ul className='Affirmations'>
             {displayAffirmations.map((affirm) => (
                 <AffirmationDetail 
@@ -57,8 +64,6 @@ function AffirmationList() {
                     />
             ))}
         </ul>
-
-    <AffirmationForm onAddAffirmation={handleAddAffirmation}/>
     </div>
   )
 }
