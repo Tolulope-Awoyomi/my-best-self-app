@@ -17,7 +17,7 @@ function NavBar() {
             to="/home"
             exact
             style={linkStyles}
-            activeStyle={{background: "white"}}
+            activestyle={{background: "white"}}
         >
             Home
         </NavLink>
@@ -26,7 +26,7 @@ function NavBar() {
             to="/physicalactivity" 
             exact
             style={linkStyles}
-            activeStyle={{background: "white"}}
+            activestyle={{background: "white"}}
         >
             Physical Activity
         </NavLink>
@@ -35,20 +35,13 @@ function NavBar() {
             to="/affirmations" 
             exact
             style={linkStyles}
-            activeStyle={{background: "white"}}
+            activestyle={{background: "white"}}
         >
             Affirmations
         </NavLink>
 
-        <NavLink
-         to="/newaffirmation" 
-         exact
-         style={linkStyles}
-         activeStyle={{background: "white"}}
-         >
-            New Affirmation
-        </NavLink>
         
+
     </div>
          
      

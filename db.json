@@ -61,14 +61,19 @@
       "category": "Success"
     },
     {
-      "statement": "",
-      "category": "Love and Relationships",
+      "statement": "I believe in myself",
+      "category": "Success",
       "id": 13
     },
     {
-      "statement": "I believe in myself",
-      "category": "Success",
+      "statement": "I love love",
+      "category": "Love and Relationships",
       "id": 14
+    },
+    {
+      "statement": "I will be great",
+      "category": "Success",
+      "id": 15
     }
   ]
 }
