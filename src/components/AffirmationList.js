@@ -20,6 +20,22 @@ function AffirmationList() {
         setAffirmations([...affirmations, newAffirmation])
     }
 
+    function handleUpdateAffirmation(updatedAffirm) {
+        const updatedAffirms = affirmations.map((affirm) => {
+            if (affirm.id === updatedAffirm.id) {
+                return updatedAffirm;
+            } else {
+                return affirm;
+            }
+        });
+        setAffirmations(updatedAffirms)
+    }
+
+    function handleDeleteAffirmation(deletedAffirm) {
+        const updatedAffirms = affirmations.filter((affirmation) => affirmation.id !== deletedAffirm.id)
+        setAffirmations(updatedAffirms)
+    }
+
     const displayAffirmations = affirmations.filter((affirm) => {
         if (selectedCategory === "All") return true;
 
@@ -32,8 +48,12 @@ function AffirmationList() {
             {displayAffirmations.map((affirm) => (
                 <AffirmationDetail 
                     key={affirm.id}
+                    affirm={affirm}
+                    id={affirm.id}
                     statement={affirm.statement}
                     category={affirm.category}
+                    onUpdateAffirm={handleUpdateAffirmation}
+                    onDeleteAffirm={handleDeleteAffirmation}
                     />
             ))}
         </ul>
