@@ -1,8 +1,8 @@
 import React from 'react'
 
-function AffirmationDetail({affirmation}) {
+function AffirmationDetail({statement, category}) {
   return (
-    <div>{affirmation}</div>
+    <div>{statement}</div>
   )
 }
 
