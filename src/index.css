@@ -117,7 +117,7 @@ header button {
   font-size: 0.8em;
 }
 
-.NewItem {
+.NewAffirmation {
   border-bottom: 2px solid var(--background-light);
   border-top: 2px solid var(--background-light);
   padding: 1rem 0;
@@ -127,11 +127,11 @@ header button {
   gap: 1rem;
 }
 
-.NewItem button {
+.NewAffirmation button {
   background: var(--yellow);
 }
 
-.NewItem label {
+.NewAffirmation label {
   font-size: 0.8em;
   display: flex;
   flex-direction: column;

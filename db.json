@@ -1,64 +1,74 @@
 {
-    "affirmations": [
-        {
-            "id": 1, 
-            "statement": "I am wealthy",
-            "category": "Financial Abundance"
-        },
-        {
-            "id": 2, 
-            "statement": "I am financially independent",
-            "category": "Financial Abundance"
-        },
-        {
-            "id": 3, 
-            "statement": "I am blessed with all blessings of life",
-            "category": "Financial Abundance"
-        },
-        {
-            "id": 4, 
-            "statement": "I am strong and fit",
-            "category": "Health"
-        },
-        {
-            "id": 5, 
-            "statement": "I am healthy",
-            "category": "Health"
-        },
-        {
-            "id": 6, 
-            "statement": "I am healed from all forms of sicknesses",
-            "category": "Health"
-        },
-        {
-            "id": 7, 
-            "statement": "I deserve a healthy love and I attract such",
-            "category": "Love and Relationships"
-        },
-        {
-            "id": 8, 
-            "statement": "I am grateful for the people in my life",
-            "category": "Love and Relationships"
-        },
-        {
-            "id": 9, 
-            "statement": "I don't need anyone to complete me",
-            "category": "Love and Relationships"
-        },
-        {
-            "id": 10, 
-            "statement": "I am successful!",
-            "category": "Success"
-        },
-        {
-            "id": 11, 
-            "statement": "The fact that I failed does not mean I am a failure",
-            "category": "Success"
-        },
-        {
-            "id": 12, 
-            "statement": "I am a few steps closer to my dream life!",
-            "category": "Success"
-        }
-    ]
+  "affirmations": [
+    {
+      "id": 1,
+      "statement": "I am wealthy",
+      "category": "Financial Abundance"
+    },
+    {
+      "id": 2,
+      "statement": "I am financially independent",
+      "category": "Financial Abundance"
+    },
+    {
+      "id": 3,
+      "statement": "I am blessed with all blessings of life",
+      "category": "Financial Abundance"
+    },
+    {
+      "id": 4,
+      "statement": "I am strong and fit",
+      "category": "Health"
+    },
+    {
+      "id": 5,
+      "statement": "I am healthy",
+      "category": "Health"
+    },
+    {
+      "id": 6,
+      "statement": "I am healed from all forms of sicknesses",
+      "category": "Health"
+    },
+    {
+      "id": 7,
+      "statement": "I deserve a healthy love and I attract such",
+      "category": "Love and Relationships"
+    },
+    {
+      "id": 8,
+      "statement": "I am grateful for the people in my life",
+      "category": "Love and Relationships"
+    },
+    {
+      "id": 9,
+      "statement": "I don't need anyone to complete me",
+      "category": "Love and Relationships"
+    },
+    {
+      "id": 10,
+      "statement": "I am successful!",
+      "category": "Success"
+    },
+    {
+      "id": 11,
+      "statement": "The fact that I failed does not mean I am a failure",
+      "category": "Success"
+    },
+    {
+      "id": 12,
+      "statement": "I am a few steps closer to my dream life!",
+      "category": "Success"
+    },
+    {
+      "statement": "",
+      "category": "Love and Relationships",
+      "id": 13
+    },
+    {
+      "statement": "I believe in myself",
+      "category": "Success",
+      "id": 14
+    }
+  ]
 }

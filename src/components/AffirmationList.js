@@ -20,17 +20,16 @@ function AffirmationList() {
         setAffirmations([...affirmations, newAffirmation])
     }
 
-    // const displayAffirmations = affirmations.filter((affirm) => {
-    //     return <p>{affirm}</p>
-    //     // if (selectedCategory === "All") return true;
+    const displayAffirmations = affirmations.filter((affirm) => {
+        if (selectedCategory === "All") return true;
 
-    //     // return affirm.category === selectedCategory;
-    // })
-console.log(affirmations)
+        return affirm.category === selectedCategory;
+    })
+
   return (
     <div className="AffirmationList">
         <ul className='Affirmations'>
-            {affirmations.map((affirm) => (
+            {displayAffirmations.map((affirm) => (
                 <AffirmationDetail 
                     key={affirm.id}
                     statement={affirm.statement}
@@ -39,7 +38,7 @@ console.log(affirmations)
             ))}
         </ul>
 
-    <AffirmationForm />
+    <AffirmationForm onAddAffirmation={handleAddAffirmation}/>
     </div>
   )
 }

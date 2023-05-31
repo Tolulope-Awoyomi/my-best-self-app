@@ -2,7 +2,11 @@ import React from 'react'
 
 function AffirmationDetail({statement, category}) {
   return (
-    <div>{statement}</div>
+    <li>
+        <span className='Affirmations'>{statement}</span>
+        <span className='category'>{category}</span>
+    </li>
+    
   )
 }
 
