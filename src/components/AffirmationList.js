@@ -45,11 +45,11 @@ function AffirmationList() {
 
   return (
     <div className="AffirmationList">
+        <AffirmationForm onAddAffirmation={handleAddAffirmation}/>
+        
         <Filter 
             category={selectedCategory}
             onCategoryChange={handleCategoryChange}/>   
-
-        <AffirmationForm onAddAffirmation={handleAddAffirmation}/>
 
         <ul className='Affirmations'>
             {displayAffirmations.map((affirm) => (
