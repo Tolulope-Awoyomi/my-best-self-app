@@ -40,6 +40,15 @@ function NavBar() {
             Affirmations
         </NavLink>
 
+        <NavLink
+            to="/explore" 
+            exact
+            style={linkStyles}
+            activestyle={{background: "white"}}
+        >
+            Explore!
+        </NavLink>
+
         
 
     </div>

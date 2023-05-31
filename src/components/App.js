@@ -5,6 +5,7 @@ import Home from "./Home";
 import PhysicalActivity from "./PhysicalActivity";
 import AffirmationList from "./AffirmationList";
 import NavBar from "./NavBar";
+import Explore from "./Explore";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -23,7 +24,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/physicalactivity" element={<PhysicalActivity />} />
         <Route path="/affirmations" element={<AffirmationList />} />
-        
+        <Route path="/explore" element={<Explore />} />
       </Routes>
     </div>
   );
