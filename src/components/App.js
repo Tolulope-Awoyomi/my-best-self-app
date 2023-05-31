@@ -1,11 +1,19 @@
+import React, { useState } from "react";
+import Header from "./Header";
 import Home from "./Home";
 import PhysicalActivity from "./PhysicalActivity";
 import AffirmationList from "./AffirmationList";
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  function handleDarkModeClick() {
+    setIsDarkMode((isDarkMode) => !isDarkMode);
+  }
 
   return (
-    <div className="App">
+    <div className={"App" + (isDarkMode ? "dark" : "light")}>
+      <Header isDarkMode={isDarkMode} onDarkModeClick={handleDarkModeClick}/>
       <Home />
       <PhysicalActivity />
       <AffirmationList />
