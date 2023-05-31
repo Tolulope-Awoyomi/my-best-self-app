@@ -12,7 +12,48 @@ const linkStyles = {
 
 function NavBar() {
   return (
-    <div>NavBar</div>
+    <div>
+        <NavLink
+            to="/home"
+            exact
+            style={linkStyles}
+            activeStyle={{background: "white"}}
+        >
+            Home
+        </NavLink>
+        
+        <NavLink
+            to="/physicalactivity" 
+            exact
+            style={linkStyles}
+            activeStyle={{background: "white"}}
+        >
+            Physical Activity
+        </NavLink>
+
+        <NavLink
+            to="/affirmations" 
+            exact
+            style={linkStyles}
+            activeStyle={{background: "white"}}
+        >
+            Affirmations
+        </NavLink>
+
+        <NavLink
+         to="/newaffirmation" 
+         exact
+         style={linkStyles}
+         activeStyle={{background: "white"}}
+         >
+            New Affirmation
+        </NavLink>
+        
+    </div>
+         
+     
+    
+   
   )
 }
 
