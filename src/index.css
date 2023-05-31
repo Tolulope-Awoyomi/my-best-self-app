@@ -80,11 +80,11 @@ header button {
   background: var(--cyan);
 }
 
-.Items {
+.Affirmations {
   list-style: none;
 }
 
-.Items li {
+.Affirmations li {
   margin: 0.5rem 0;
   padding: 0.25rem;
   display: grid;
@@ -94,24 +94,24 @@ header button {
   border-radius: 4px;
 }
 
-.Items li.in-cart {
+.Affirmations li.in-cart {
   background: var(--background-light);
 }
 
-.Items li.in-cart span {
+.Affirmations li.in-cart span {
   text-decoration: line-through;
 }
 
-.Items button.add {
+.Affirmations button.add {
   background-color: var(--yellow);
 }
 
-.Items button.remove {
+.Affirmations button.remove {
   background-color: var(--magenta);
   color: white;
 }
 
-.Items li .category {
+.Affirmations li .category {
   justify-self: end;
   color: var(--font-color-light);
   font-size: 0.8em;
