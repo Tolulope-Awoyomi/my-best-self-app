@@ -23,7 +23,7 @@ function AffirmationForm({onAddAffirmation}) {
     return (
     <form className="NewAffirmation" onSubmit={handleSubmit}>
         <label>
-            Affirmation:
+            Add Your Affirmation:
             <input 
                 type="text"
                 name="statement"
