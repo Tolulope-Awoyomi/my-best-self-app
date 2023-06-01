@@ -64,6 +64,7 @@ function NavBar({ setIsLoggedIn }) {
         >
             LogIn
         </NavLink>
+        
         <button onClick={handleLogout}>Logout</button>
     </div>
          

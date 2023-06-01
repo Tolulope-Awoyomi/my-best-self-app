@@ -35,20 +35,25 @@ function PhysicalActivity() {
 
   return (
     <>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
       <div>
-        <h2> Workout for 20 minutes - Let's do this!</h2>
+        <h1 className='workout'> Workout for 20 minutes - Let's do this!</h1>
       </div>
       
       <div>
-        <h3>You can do this!</h3>
-        <h2>
+        <h4 className='workout'> You can do this!</h4>
+        <h2 className='workout1'>
           <em>
             {minutes.toString().padStart(2, '0')}:
             {seconds.toString().padStart(2, '0')} minutes left!
           </em>
         </h2>
       </div>
-      <div>
+      <div className='workout2'>
         {!isRunning ? (
           <button onClick={handleStart}>Start</button>
         ) : (

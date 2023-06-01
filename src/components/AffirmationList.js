@@ -60,7 +60,7 @@ function AffirmationList() {
 
       <input
         type="text"
-        placeholder="Search Affirmations"
+        placeholder="search affirmations..."
         value={searchAffirm}
         onChange={(e) => setSearchAffirm(e.target.value)}
       />

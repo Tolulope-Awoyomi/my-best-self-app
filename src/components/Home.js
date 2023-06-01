@@ -6,11 +6,13 @@ function Home({ isLoggedIn }) {
 
   return (
     <>
-      <div>Welcome </div>
-      <div> to </div>
-      <div>My Best Self</div>
+      <div className='HomePage'> 
+        <div> Welcome </div>
+        <div> to </div>
+        <div>My Best Self</div> 
+      </div>
     </>
   )
-}
+  }
 
 export default Home

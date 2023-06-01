@@ -25,6 +25,7 @@ function AffirmationForm({onAddAffirmation}) {
         <label>
             Add Your Affirmation:
             <input 
+                placeholder="type your affirmation..."
                 type="text"
                 name="statement"
                 value={affirmation}
