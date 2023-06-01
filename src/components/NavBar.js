@@ -15,7 +15,7 @@ function NavBar({ setIsLoggedIn }) {
   
     function handleLogout() {
       setIsLoggedIn(false);
-      navigate.push("/login");
+      navigate("/login");
     }
 
   return (

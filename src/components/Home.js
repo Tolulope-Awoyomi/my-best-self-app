@@ -5,7 +5,11 @@ function Home({ isLoggedIn }) {
   if (!isLoggedIn) return <Navigate to="/login"/>
 
   return (
-    <div>Home</div>
+    <>
+      <div>Welcome </div>
+      <div> to </div>
+      <div>My Best Self</div>
+    </>
   )
 }
 
