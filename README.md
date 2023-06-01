@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# COURSE CODE WEB APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Specification
+This is a one-page HTML/CSS/JS front-end web app that accesses data from a generated db.json file using json server. 
+All interactions between the client and the db.json file are handled asynchronously and uses JSON as the 
+communication format. There are at least three event listeners used to enable 
+interactivity in the app. They are DOMContentLoaded, submit, and click events. 
+Each of the event listener has its own unique callback function.  
+This app also implements at least one instance of array iteration using the map array method. 
 
-## Available Scripts
 
-In the project directory, you can run:
+## Structuring My Code
+There are five files and an image:
+* An `index.html` file: contains the basic text of the app. 
+* An `functionality.js` file: contains the codes that drive the app's functionality (including the function to fetch and display data).
+* A `countDown.js` file: contains the codes pertaining to the countdown and clock's functionalities.
+* A `db.json` file: contains a collection of 6 objects with 5 attributes.
+* An `design.css` file: contains the codes used to achieve the aesthetics of the web app.
+* An image `COURSECODE.png`: which is the logo for the web app.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Deliverables
+* As a user, I should see the current date and time at the top right corner of the web app.
+* As a user, I should see the countdown clock to when classes begin. 
+* As a user, I should be able to type my name, phone number, and email into their respective input fields.
+* As a user, I should be able to select a course I am interested in learning, among a variety of options.
+* As a user, after inputing my details, I should be able to click a register button.
+* As a user, I expect to see the name, description, duration and tuition of the courses provided.  
+* As a user, I should be able to input a review, if I wish to.
+* As a user, I should be able to click on a submit button after inputing my review.
+* As a user, I expect to see my review appear after I click the submit button.
+* As a user, I should be able to delete my review, if I wish to. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Conclusion
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+That's it! I hope you love my Course Code Web App!
 
-### `npm run build`
+Below is the gif of my Course Code Web App:
+![Course_Code_web_app](https://user-images.githubusercontent.com/111917239/212435128-a6da17b9-5d18-471a-ad4e-049590dbce80.gif)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Below is a screen shot of the first part of my Course Code Web App:
+![Course Code Screen shot](https://user-images.githubusercontent.com/111917239/212435594-3be6d8a6-6fe9-45ad-a530-f12a987e0cfb.png)
