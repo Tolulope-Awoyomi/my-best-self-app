@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink, useHistory } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const linkStyles = {
     width: "100px",
@@ -10,7 +10,14 @@ const linkStyles = {
     color: "white",
   };
 
-function NavBar() {
+function NavBar({ setIsLoggedIn }) {
+    const navigate = useNavigate();
+  
+    function handleLogout() {
+      setIsLoggedIn(false);
+      navigate.push("/login");
+    }
+
   return (
     <div>
         <NavLink
@@ -49,8 +56,15 @@ function NavBar() {
             Explore!
         </NavLink>
 
-        
-
+        <NavLink
+            to="/login" 
+            exact 
+            style={linkStyles}
+            activestyle={{background: "white"}}
+        >
+            LogIn
+        </NavLink>
+        <button onClick={handleLogout}>Logout</button>
     </div>
          
      

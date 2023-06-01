@@ -6,6 +6,7 @@ import PhysicalActivity from "./PhysicalActivity";
 import AffirmationList from "./AffirmationList";
 import NavBar from "./NavBar";
 import Explore from "./Explore";
+import LogIn from "./LogIn";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -21,11 +22,11 @@ function App() {
       <Header isDarkMode={isDarkMode} onDarkModeClick={handleDarkModeClick} />
       
       <Routes>
-        <Route path="/home" element={<Home isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>} />
+        <Route path="/home" element={<Home isLoggedIn={isLoggedIn} />} />
         <Route path="/physicalactivity" element={<PhysicalActivity />} />
         <Route path="/affirmations" element={<AffirmationList />} />
         <Route path="/explore" element={<Explore />} />
-        <Route path="/login" element={<Login isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>} />
+        <Route path="/login" element={<LogIn setIsLoggedIn={setIsLoggedIn}/>} />
       </Routes>
     </div>
   );

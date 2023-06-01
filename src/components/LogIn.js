@@ -1,27 +1,27 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
-function Login({ setIsLoggedIn }) {
-  const history = useHistory();
-  const [formData, setFormData] = useState({
-    username: "",
-    password: "",
-  });
-
-  function handleChange(e) {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
+function LogIn({ setIsLoggedIn }) {
+    const navigate = useNavigate(); // Replace 'history' with 'navigate'
+    const [formData, setFormData] = useState({
+      username: "",
+      password: "",
     });
-  }
-
-  function handleSubmit(e) {
-    e.preventDefault();
-
-    setIsLoggedIn(true);
-
-    history.push("/home");
-  }
+  
+    function handleChange(e) {
+      setFormData({
+        ...formData,
+        [e.target.name]: e.target.value,
+      });
+    }
+  
+    function handleSubmit(e) {
+      e.preventDefault();
+  
+      setIsLoggedIn(true);
+  
+      navigate("/home"); // Use 'navigate' instead of 'history.push'
+    }
 
   return (
     <form onSubmit={handleSubmit}>
@@ -43,4 +43,4 @@ function Login({ setIsLoggedIn }) {
   );
 }
 
-export default Login;
+export default LogIn;
