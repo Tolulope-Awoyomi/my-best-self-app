@@ -15,9 +15,9 @@ function App() {
   function handleDarkModeClick() {
     setIsDarkMode((isDarkMode) => !isDarkMode);
   }
-
+console.log(isDarkMode)
   return (
-    <div className={"App" + (isDarkMode ? "dark" : "light")}>
+    <div className={"App " + (isDarkMode ? "dark" : "light")}>
       <NavBar setIsLoggedIn={setIsLoggedIn} />
       <Header isDarkMode={isDarkMode} onDarkModeClick={handleDarkModeClick} />
       
