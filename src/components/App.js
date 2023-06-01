@@ -21,7 +21,7 @@ function App() {
       <Header isDarkMode={isDarkMode} onDarkModeClick={handleDarkModeClick} />
       
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/home" element={<Home isLoggedIn={setIsLoggedIn}/>} />
         <Route path="/physicalactivity" element={<PhysicalActivity />} />
         <Route path="/affirmations" element={<AffirmationList />} />
         <Route path="/explore" element={<Explore />} />
