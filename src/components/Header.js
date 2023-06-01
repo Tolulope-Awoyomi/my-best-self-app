@@ -3,7 +3,7 @@ import React from 'react'
 function Header({ isDarkMode, onDarkModeClick }) {
   return (
     <header>
-        <h2>My Best Self</h2>
+        <br></br>
         <button onClick={onDarkModeClick}>
             {isDarkMode ? "Dark" : "Light"} Mode
         </button>

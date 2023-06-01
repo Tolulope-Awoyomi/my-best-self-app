@@ -9,8 +9,8 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 2;
+  padding: 10;
   box-sizing: border-box;
 }
 
@@ -23,11 +23,11 @@ body {
 button,
 select,
 input {
-  border: none;
+  border: outset;
   padding: 0.5rem;
   border-radius: 4px;
   font-size: 1rem;
-  background: var(--background-light);
+  background: whitesmoke;
 }
 
 span[role="image"] {
@@ -64,9 +64,12 @@ header h2 {
   padding: 1rem 0;
 }
 
-header button {
-  background: var(--yellow);
+
+Header button {
+  background-color: var(--cyan);
+  
 }
+
 
 .Filter {
   display: flex;
@@ -94,21 +97,18 @@ header button {
   border-radius: 4px;
 }
 
-.Affirmations li.in-cart {
-  background: var(--background-light);
+
+.NewAffirmation form.label {
+  background-color: var(--cyan);
 }
 
-.Affirmations li.in-cart span {
-  text-decoration: line-through;
-}
-
-.Affirmations button.add {
-  background-color: var(--yellow);
-}
-
-.Affirmations button.remove {
-  background-color: var(--magenta);
+.Affirmations button.edit {
   color: white;
+  background-color: var(--magenta);
+}
+.Affirmations button.remove {
+  color: white;
+  background-color: red;
 }
 
 .Affirmations li .category {
@@ -128,11 +128,12 @@ header button {
 }
 
 .NewAffirmation button {
-  background: var(--yellow);
+  background: var(--magenta);
+  color:rgb(255, 255, 255)
 }
 
 .NewAffirmation label {
-  font-size: 0.8em;
+  font-size: 0.9em;
   display: flex;
   flex-direction: column;
   flex: 1;
