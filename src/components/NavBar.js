@@ -62,7 +62,7 @@ function NavBar({ setIsLoggedIn }) {
             style={linkStyles}
             activestyle={{background: "white"}}
         >
-            LogIn
+            Log In
         </NavLink>
         
         <button onClick={handleLogout}>Logout</button>

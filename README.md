@@ -1,43 +1,30 @@
-# COURSE CODE WEB APP
+# MY BEST SELF APP
 
 ## Specification
-This is a one-page HTML/CSS/JS front-end web app that accesses data from a generated db.json file using json server. 
-All interactions between the client and the db.json file are handled asynchronously and uses JSON as the 
-communication format. There are at least three event listeners used to enable 
-interactivity in the app. They are DOMContentLoaded, submit, and click events. 
-Each of the event listener has its own unique callback function.  
-This app also implements at least one instance of array iteration using the map array method. 
-
-
-## Structuring My Code
-There are five files and an image:
-* An `index.html` file: contains the basic text of the app. 
-* An `functionality.js` file: contains the codes that drive the app's functionality (including the function to fetch and display data).
-* A `countDown.js` file: contains the codes pertaining to the countdown and clock's functionalities.
-* A `db.json` file: contains a collection of 6 objects with 5 attributes.
-* An `design.css` file: contains the codes used to achieve the aesthetics of the web app.
-* An image `COURSECODE.png`: which is the logo for the web app.
+* This is a single page application (has one index.html file) created using create-react-app.
+* It contains 11 components - <App/>, <Home/>, <Header/>, <NavBar/>, <LogIn/>, <Filter/>, <AffirmationList/>, <AffirmationDetail/>, <AffirmationForm/>, <PhysicalActivity/>, and <Explore/>. 
+* There are more than 3 client-side routes using React Router.
+* Data is accessed from an external API and a generated db.json file using json server.
+* GET, POST, PATCH, and DELETE requests are made to the json server.
+* A controlled form is used to make the POST request. 
 
 
 ## Deliverables
-* As a user, I should see the current date and time at the top right corner of the web app.
-* As a user, I should see the countdown clock to when classes begin. 
-* As a user, I should be able to type my name, phone number, and email into their respective input fields.
-* As a user, I should be able to select a course I am interested in learning, among a variety of options.
-* As a user, after inputing my details, I should be able to click a register button.
-* As a user, I expect to see the name, description, duration and tuition of the courses provided.  
-* As a user, I should be able to input a review, if I wish to.
-* As a user, I should be able to click on a submit button after inputing my review.
-* As a user, I expect to see my review appear after I click the submit button.
-* As a user, I should be able to delete my review, if I wish to. 
+* As a user, once the app displays, I should see 5 components ('Home', 'Physical Activity', 'Affirmations', 'Explore!', and 'Log In') at the header and 2 buttons (Logout and Dark/Light Mode). 
+* As a user, the first page I should see is the 'Log In' page, where I should be able to input my username and password and login.  
+* As a user, after I log in, I should be redirected to the 'Home' page. 
+* As a user, when I click the 'Physical Activity' component at the header, I should be able to start, pause, and restart the 20 minutes countdown timer.
+* As a user, when I click the 'Affirmations' component at the header, I should be able to see a list of affirmations and their categories, and if I so wish, edit or delete. 
+* As a user, still in the 'Affirmations' page, I should be able to filter the affirmations by their categories. I should also be able to add a new affirmation and select a category. Also, I should be able to search for an affirmation. 
+* As a user, when I click the 'Explore!' component at the header, I should see a 'Click me and keep clicking' button which suggests activities for me to do. I can delete an activity, if I wish to. 
+* As a user, after I am done with my session, I should be able to logout, if I wish to.
+* As a user, I should be able to switch the color mode of the app when I click the 'Light/Dark Mode'.
 
 
 ## Conclusion
 
-That's it! I hope you love my Course Code Web App!
+That's it! I hope you love 'My Best Self App'!
 
 Below is the gif of my Course Code Web App:
 ![Course_Code_web_app](https://user-images.githubusercontent.com/111917239/212435128-a6da17b9-5d18-471a-ad4e-049590dbce80.gif)
 
-Below is a screen shot of the first part of my Course Code Web App:
-![Course Code Screen shot](https://user-images.githubusercontent.com/111917239/212435594-3be6d8a6-6fe9-45ad-a530-f12a987e0cfb.png)

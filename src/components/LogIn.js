@@ -29,12 +29,14 @@ function LogIn({ setIsLoggedIn }) {
       <input
         type="text"
         name="username"
+        placeholder="username"
         value={formData.username}
         onChange={handleChange}
       />
       <input
         type="password"
         name="password"
+        placeholder="password"
         value={formData.password}
         onChange={handleChange}
       />
