@@ -25,6 +25,4 @@
 
 That's it! I hope you love 'My Best Self App'!
 
-Below is the gif of my Course Code Web App:
-![Course_Code_web_app](https://user-images.githubusercontent.com/111917239/212435128-a6da17b9-5d18-471a-ad4e-049590dbce80.gif)
-
+Below is the gif of 'My Best Self App' extract:
