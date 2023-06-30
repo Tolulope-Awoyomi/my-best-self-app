@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom"; // v5 -> { NavLink, useHistory }
 
 const linkStyles = {
     width: "100px",
@@ -11,18 +11,18 @@ const linkStyles = {
   };
 
 function NavBar({ setIsLoggedIn }) {
-    const navigate = useNavigate();
+    const navigate = useNavigate(); // v5 -> const history = useHistory()
   
     function handleLogout() {
       setIsLoggedIn(false);
-      navigate("/login");
+      navigate("/login"); // v5 -> history.push("/login")
     }
 
   return (
     <div>
         <NavLink
             to="/home"
-            exact
+            
             style={linkStyles}
             activestyle={{background: "white"}}
         >
@@ -31,7 +31,7 @@ function NavBar({ setIsLoggedIn }) {
         
         <NavLink
             to="/physicalactivity" 
-            exact
+            
             style={linkStyles}
             activestyle={{background: "white"}}
         >
@@ -40,7 +40,7 @@ function NavBar({ setIsLoggedIn }) {
 
         <NavLink
             to="/affirmations" 
-            exact
+            
             style={linkStyles}
             activestyle={{background: "white"}}
         >
@@ -49,7 +49,7 @@ function NavBar({ setIsLoggedIn }) {
 
         <NavLink
             to="/explore" 
-            exact
+            
             style={linkStyles}
             activestyle={{background: "white"}}
         >
@@ -58,7 +58,7 @@ function NavBar({ setIsLoggedIn }) {
 
         <NavLink
             to="/login" 
-            exact 
+             
             style={linkStyles}
             activestyle={{background: "white"}}
         >

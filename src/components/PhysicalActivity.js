@@ -1,31 +1,32 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function PhysicalActivity() {
   const [count, setCount] = useState(1200);
   const [isRunning, setIsRunning] = useState(false);
-  const intervalRef = useRef(null);
 
   useEffect(() => {
+    let interval;
+
     if (isRunning) {
-      intervalRef.current = setInterval(() => {
+      interval = setInterval(() => {
         setCount((prevCount) => prevCount - 1);
       }, 1000);
     }
 
     return () => {
-      clearInterval(intervalRef.current);
+      clearInterval(interval);
     };
   }, [isRunning]);
 
-  const handleStart = () => {
+  function handleStart() {
     setIsRunning(true);
   };
 
-  const handlePause = () => {
+  function handlePause() {
     setIsRunning(false);
   };
 
-  const handleRestart = () => {
+  function handleRestart() {
     setCount(1200);
     setIsRunning(true);
   };
@@ -40,6 +41,7 @@ function PhysicalActivity() {
     <br />
     <br />
     <br />
+
       <div>
         <h1 className='workout'> Workout for 20 minutes - Let's do this!</h1>
       </div>
@@ -53,6 +55,7 @@ function PhysicalActivity() {
           </em>
         </h2>
       </div>
+      
       <div className='workout2'>
         {!isRunning ? (
           <button onClick={handleStart}>Start</button>

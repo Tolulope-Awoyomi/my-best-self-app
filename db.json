@@ -2,7 +2,7 @@
   "affirmations": [
     {
       "id": 1,
-      "statement": "I am wealthy",
+      "statement": "Wealth is mine",
       "category": "Financial Abundance"
     },
     {
@@ -12,22 +12,22 @@
     },
     {
       "id": 3,
-      "statement": "I am blessed with all blessings of life",
+      "statement": "All blessings of life follow me",
       "category": "Financial Abundance"
     },
     {
       "id": 4,
-      "statement": "I am strong and fit",
+      "statement": "Physically fit and strong",
       "category": "Health"
     },
     {
       "id": 5,
-      "statement": "I am healthy",
+      "statement": "Healthier than ever before",
       "category": "Health"
     },
     {
       "id": 6,
-      "statement": "I am healed from all forms of sicknesses",
+      "statement": "Healed from all forms of sicknesses",
       "category": "Health"
     },
     {
@@ -37,7 +37,7 @@
     },
     {
       "id": 8,
-      "statement": "I am grateful for the people in my life",
+      "statement": "Grateful for the people in my life",
       "category": "Love and Relationships"
     },
     {
@@ -47,7 +47,7 @@
     },
     {
       "id": 10,
-      "statement": "I am successful!",
+      "statement": "Successful, yes, I am sucessful!",
       "category": "Success"
     },
     {
@@ -57,7 +57,7 @@
     },
     {
       "id": 12,
-      "statement": "I am a few steps closer to my dream life!",
+      "statement": "Only a few steps closer to my dream life",
       "category": "Success"
     }
   ]

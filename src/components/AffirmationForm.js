@@ -18,8 +18,12 @@ function AffirmationForm({onAddAffirmation}) {
             body: JSON.stringify(affirmData)
         })
         .then((r) => r.json())
-        .then((newAffirm) => onAddAffirmation(newAffirm))
+        .then((newAffirm) => {
+            onAddAffirmation(newAffirm)
+            setAffirmation("")
+        })
     }
+
     return (
     <form className="NewAffirmation" onSubmit={handleSubmit}>
         <label>

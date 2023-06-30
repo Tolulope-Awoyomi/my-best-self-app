@@ -15,7 +15,7 @@ function AffirmationDetail({ affirm, onDeleteAffirm, onUpdateAffirm }) {
       }),
     })
     .then((r) => r.json())
-    .then((updatedAffirm) => setEditedStatement(updatedAffirm))
+    .then((updatedAffirm) => onUpdateAffirm(updatedAffirm))
   }
 
   function handleDeleteClick() {
@@ -38,16 +38,19 @@ function AffirmationDetail({ affirm, onDeleteAffirm, onUpdateAffirm }) {
     <li>
       <input type="text" value={editedStatement} onChange={handleStatementChange} />
       <span className="category">{affirm.category}</span>
+      
       <select value={selectedOption} onChange={handleOptionChange}>
         <option value="">Select an option</option>
         <option value="edit">Edit</option>
         <option value="delete">Delete</option>
       </select>
+
       {selectedOption === 'delete' && (
         <button className="remove" onClick={handleDeleteClick}>
           Delete
         </button>
       )}
+
       {selectedOption === 'edit' && (
         <button className="edit" onClick={handleAffirmEdit}>
           Edit

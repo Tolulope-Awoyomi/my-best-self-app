@@ -34,9 +34,7 @@ function AffirmationList() {
   }
 
   function handleDeleteAffirmation(deletedAffirm) {
-    const updatedAffirms = affirmations.filter(
-      (affirmation) => affirmation.id !== deletedAffirm.id
-    );
+    const updatedAffirms = affirmations.filter((affirmation) => affirmation.id !== deletedAffirm.id);
     setAffirmations(updatedAffirms);
   }
 
@@ -47,7 +45,7 @@ function AffirmationList() {
       return affirm.category === selectedCategory;
     })
     .filter((affirm) => {
-      if (searchAffirm.trim() === '') return true;
+      if (searchAffirm === null) return true;
 
       return affirm.statement.toLowerCase().includes(searchAffirm.toLowerCase());
     });

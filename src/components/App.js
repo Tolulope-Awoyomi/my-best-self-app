@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom'; // v5 is {Route, Switch}. Where you see Routes is Switch in v5 
 import Header from "./Header";
 import Home from "./Home";
 import PhysicalActivity from "./PhysicalActivity";
@@ -8,6 +8,7 @@ import NavBar from "./NavBar";
 import Explore from "./Explore";
 import LogIn from "./LogIn";
 
+
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false)
@@ -15,7 +16,7 @@ function App() {
   function handleDarkModeClick() {
     setIsDarkMode((isDarkMode) => !isDarkMode);
   }
-console.log(isDarkMode)
+
   return (
     <div className={"App " + (isDarkMode ? "dark" : "light")}>
       <NavBar setIsLoggedIn={setIsLoggedIn} />
